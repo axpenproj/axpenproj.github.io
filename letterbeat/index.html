@@ -3,46 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Letterbeat</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; min-height: 100vh; display: grid; place-items: center;
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #f3efe6; background: #0e0e14;
-  }
-  main { padding: 2rem 1.25rem; max-width: 34rem; text-align: center; }
-  h1 { font-size: clamp(2.4rem, 12vw, 4rem); margin: 0; letter-spacing: -.02em; }
-  h1 span { color: #ff4d2e; }
-  p.tag { color: #a09c94; margin: .4rem 0 2.2rem; }
-  p { margin: 0 0 1.1rem; }
-  a { color: #ff7a5e; }
-  ul { list-style: none; padding: 0; margin: 2rem 0 0; }
-  li { margin: .5rem 0; }
-  footer { margin-top: 2.5rem; font-size: .85rem; color: #77736c; }
-</style>
+<title>Letterbeat — Axpenproj</title>
+<meta name="description" content="Fifteen animated templates — kinetic type, morphing shapes, glitches, data counters — that you fill with your own words, photos and videos. Every cut and every hit is timed to a soundtrack the app writes for your edit.">
+<meta name="theme-color" content="#07070c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Letterbeat">
+<meta property="og:description" content="Motion graphics that land on the beat.">
+<meta property="og:url" content="https://axpenproj.github.io/letterbeat/">
+<meta property="og:image" content="https://axpenproj.github.io/assets/letterbeat/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/letterbeat/icon.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Unbounded:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
 </head>
-<body>
+<body class="g-letterbeat">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Axpenproj home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#c8ff3d"/><path d="M8.5 24 16 7.5 23.5 24" fill="none" stroke="#07070c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19" r="2.4" fill="#07070c"/></svg>
+      AXPENPROJ
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="../#games">All games</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <h1>LETTER<br><span>BEAT</span></h1>
-  <p class="tag">motion graphics that land on the beat</p>
+  <section class="g-hero">
+    <div class="backdrop" style="background-image:url(../assets/letterbeat/feature.webp)"></div>
+    <div class="wrap">
+      <div>
+        <a class="back" href="../#games">&larr; All games</a>
+        <div class="g-id">
+          <img class="g-icon" src="../assets/letterbeat/icon.webp" width="256" height="256" alt="">
+          <div>
+            <span class="chip soon"><i></i>Coming soon</span>
+            <p class="eyebrow" style="margin-top:.7rem">Motion graphics app &middot; Android</p>
+          </div>
+        </div>
+        <h1 class="g-title">Letter<span>beat</span></h1>
+        <p class="g-tag">Motion graphics that land on the beat.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="mailto:axpenproj@gmail.com?subject=Letterbeat%20launch">Tell me when it launches</a>
+          <a class="btn" href="#screens">Screenshots</a>
+        </div>
+      </div>
+      <div class="g-feature">
+        <img src="../assets/letterbeat/feature.webp" width="1024" height="500" alt="Letterbeat key art">
+      </div>
+    </div>
+  </section>
 
-  <p>Fifteen animated templates &mdash; kinetic type, morphing shapes, glitches,
-  data counters &mdash; that you fill with your own words, photos and videos.
-  Every cut and every hit is timed to a soundtrack the app writes for your edit.</p>
+  <section class="g-body">
+    <div class="wrap">
+      <div class="prose reveal">
+        <p>Fifteen animated templates &mdash; kinetic type, morphing shapes, glitches, data counters &mdash; that you fill with your own words, photos and videos. Every cut and every hit is timed to a soundtrack the app writes for your edit.</p>
+        <p>Tap any text in the preview to change it, pick from eighteen typefaces, swap backgrounds, then export an MP4 up to 2K straight to your gallery.</p>
+        <p>No ads, no in-app purchases, no account, and no internet connection &mdash; the app does not even ask for one.</p>
+      </div>
+      <ul class="facts reveal" style="--delay:.1s">
+        <li><span>Status</span><b>Coming soon</b></li>
+        <li><span>Platform</span><b>Android</b></li>
+        <li><span>Templates</span><b>15</b></li>
+        <li><span>Typefaces</span><b>18</b></li>
+        <li><span>Export</span><b>MP4, up to 2K</b></li>
+        <li><span>Internet</span><b>Never used</b></li>
+      </ul>
+    </div>
+  </section>
 
-  <p>Tap any text in the preview to change it, pick from eighteen typefaces,
-  swap backgrounds, then export an MP4 up to 2K straight to your gallery.</p>
+  <section class="shots" id="screens">
+    <div class="wrap"><h2 class="reveal">Screenshots</h2></div>
+    <div class="strip">
+      <button type="button" aria-label="Enlarge screenshot 1"><img src="../assets/letterbeat/shot-1.webp" width="540" height="960" alt="Letterbeat screenshot 1" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 2"><img src="../assets/letterbeat/shot-2.webp" width="540" height="960" alt="Letterbeat screenshot 2" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 3"><img src="../assets/letterbeat/shot-3.webp" width="540" height="960" alt="Letterbeat screenshot 3" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 4"><img src="../assets/letterbeat/shot-4.webp" width="540" height="960" alt="Letterbeat screenshot 4" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 5"><img src="../assets/letterbeat/shot-5.webp" width="540" height="960" alt="Letterbeat screenshot 5" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 6"><img src="../assets/letterbeat/shot-6.webp" width="540" height="960" alt="Letterbeat screenshot 6" loading="lazy"></button>
+    </div>
+  </section>
 
-  <p>No ads, no in-app purchases, no account, and no internet connection &mdash; the app does not even ask for one.</p>
-
-  <ul>
-    <li><a href="privacy.html">Privacy policy</a></li>
-    <li><a href="terms.html">Terms of use</a></li>
-    <li><a href="mailto:axpenproj@gmail.com">axpenproj@gmail.com</a></li>
-  </ul>
-
-  <footer>Axpenproj</footer>
+  <section class="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <p class="eyebrow"><span class="pulse"></span>Questions &amp; bugs</p>
+        <h2>Feedback for Letterbeat?</h2>
+        <p>Bug reports, ideas, and questions about the <a class="u" href="privacy.html">privacy policy</a>
+        or <a class="u" href="terms.html">terms of use</a> all go to one inbox.</p>
+        <a class="mail" href="mailto:axpenproj@gmail.com">axpenproj@gmail.com</a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<dialog class="lightbox" aria-label="Screenshot">
+  <form method="dialog"><button aria-label="Close">&times;</button></form>
+  <img src="data:," alt="">
+</dialog>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Letterbeat &middot; &copy; 2026 Axpenproj</span>
+    <nav aria-label="Legal">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+      <a href="../">Axpenproj</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>

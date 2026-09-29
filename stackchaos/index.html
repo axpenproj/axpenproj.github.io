@@ -3,42 +3,123 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Column Chaos</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; min-height: 100vh; display: grid; place-items: center;
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #f5f4fb; background: #0c0b16;
-  }
-  main { padding: 2rem 1.25rem; max-width: 34rem; text-align: center; }
-  h1 { font-size: clamp(2.4rem, 12vw, 4rem); margin: 0; letter-spacing: -.02em; }
-  h1 span { color: #f65ada; }
-  p.tag { color: #9392af; margin: .4rem 0 2.2rem; }
-  p { margin: 0 0 1.1rem; }
-  a { color: #47e5ba; }
-  ul { list-style: none; padding: 0; margin: 2rem 0 0; }
-  li { margin: .5rem 0; }
-  footer { margin-top: 2.5rem; font-size: .85rem; color: #6c6b83; }
-</style>
+<title>Column Chaos — Axpenproj</title>
+<meta name="description" content="A tower drop game where you smash your way down a stack of rotating platforms. Hit a Chaos Brick, and the game suddenly changes.">
+<meta name="theme-color" content="#07070c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Column Chaos">
+<meta property="og:description" content="Hold to smash. Let go to bounce.">
+<meta property="og:url" content="https://axpenproj.github.io/stackchaos/">
+<meta property="og:image" content="https://axpenproj.github.io/assets/stackchaos/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/stackchaos/icon.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Unbounded:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
 </head>
-<body>
+<body class="g-stackchaos">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Axpenproj home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#c8ff3d"/><path d="M8.5 24 16 7.5 23.5 24" fill="none" stroke="#07070c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19" r="2.4" fill="#07070c"/></svg>
+      AXPENPROJ
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="../#games">All games</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <h1>COLUMN<br><span>CHAOS</span></h1>
-  <p class="tag">hold to smash &middot; let go to bounce</p>
+  <section class="g-hero">
+    <div class="backdrop" style="background-image:url(../assets/stackchaos/feature.webp)"></div>
+    <div class="wrap">
+      <div>
+        <a class="back" href="../#games">&larr; All games</a>
+        <div class="g-id">
+          <img class="g-icon" src="../assets/stackchaos/icon.webp" width="256" height="256" alt="">
+          <div>
+            <span class="chip live"><i></i>Out now</span>
+            <p class="eyebrow" style="margin-top:.7rem">One-tap arcade &middot; Android</p>
+          </div>
+        </div>
+        <h1 class="g-title">Column<br><span>Chaos</span></h1>
+        <p class="g-tag">Hold to smash. Let go to bounce.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="https://play.google.com/store/apps/details?id=com.axpenproj.stackchaos" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.8v16.4c0 .8.9 1.3 1.6.9l13.1-8.2c.6-.4.6-1.4 0-1.8L7.6 2.9C6.9 2.5 6 3 6 3.8z"/></svg>
+            Get it on Google Play</a>
+          <a class="btn" href="#screens">Screenshots</a>
+        </div>
+      </div>
+      <div class="g-feature">
+        <img src="../assets/stackchaos/feature.webp" width="1024" height="500" alt="Column Chaos key art">
+      </div>
+    </div>
+  </section>
 
-  <p>A tower drop where the tower turns on its own, so the whole game is one
-  button and one decision: wait for the gap, then commit.</p>
+  <section class="g-body">
+    <div class="wrap">
+      <div class="prose reveal">
+        <p>A tower drop game where you smash your way down a stack of rotating platforms. Hit a Chaos Brick, and the game suddenly changes.</p>
+        <p>Keep smashing through the safe bricks, dodge the deadly ones, and survive whatever the tower throws at you on the way down.</p>
+      </div>
+      <ul class="facts reveal" style="--delay:.1s">
+        <li><span>Status</span><b>Out now</b></li>
+        <li><span>Platform</span><b>Android</b></li>
+        <li><span>Price</span><b>Free</b></li>
+        <li><span>Ads</span><b>Yes, via Google</b></li>
+        <li><span>Account</span><b>None</b></li>
+        <li><span>Progress</span><b>Saved on your device</b></li>
+      </ul>
+    </div>
+  </section>
 
-  <p>Some rings do something you were not expecting.</p>
+  <section class="shots" id="screens">
+    <div class="wrap"><h2 class="reveal">Screenshots</h2></div>
+    <div class="strip">
+      <button type="button" aria-label="Enlarge screenshot 1"><img src="../assets/stackchaos/shot-1.webp" width="540" height="960" alt="Column Chaos screenshot 1" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 2"><img src="../assets/stackchaos/shot-2.webp" width="540" height="960" alt="Column Chaos screenshot 2" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 3"><img src="../assets/stackchaos/shot-3.webp" width="540" height="960" alt="Column Chaos screenshot 3" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 4"><img src="../assets/stackchaos/shot-4.webp" width="540" height="960" alt="Column Chaos screenshot 4" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 5"><img src="../assets/stackchaos/shot-5.webp" width="540" height="960" alt="Column Chaos screenshot 5" loading="lazy"></button>
+      <button type="button" aria-label="Enlarge screenshot 6"><img src="../assets/stackchaos/shot-6.webp" width="540" height="960" alt="Column Chaos screenshot 6" loading="lazy"></button>
+    </div>
+  </section>
 
-  <ul>
-    <li><a href="privacy.html">Privacy policy</a></li>
-    <li><a href="terms.html">Terms of use</a></li>
-    <li><a href="mailto:axpenproj@gmail.com">axpenproj@gmail.com</a></li>
-  </ul>
-
-  <footer>Axpenproj</footer>
+  <section class="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <p class="eyebrow"><span class="pulse"></span>Questions &amp; bugs</p>
+        <h2>Feedback for Column Chaos?</h2>
+        <p>Bug reports, ideas, and questions about the <a class="u" href="privacy.html">privacy policy</a>
+        or <a class="u" href="terms.html">terms of use</a> all go to one inbox.</p>
+        <a class="mail" href="mailto:axpenproj@gmail.com">axpenproj@gmail.com</a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<dialog class="lightbox" aria-label="Screenshot">
+  <form method="dialog"><button aria-label="Close">&times;</button></form>
+  <img src="data:," alt="">
+</dialog>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Column Chaos &middot; &copy; 2026 Axpenproj</span>
+    <nav aria-label="Legal">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+      <a href="../">Axpenproj</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
